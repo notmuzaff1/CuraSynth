@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CuraSynth — AI for Safer Medication</title>
+  <meta name="description" content="CuraSynth — sun'iy intellekt asosida xavfsiz dori kombinatsiyalarini tavsiya qiluvchi platforma." />
+  <style>
+    :root{
+      --bg:#f7fbff;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0ea5a4;
+      --accent-dark:#078f8e;
+      --glass: rgba(255,255,255,0.7);
+      --radius:14px;
+      --maxw:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef7f9);color:#0f172a;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    .container{max-width:var(--maxw);margin:30px auto;padding:24px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    h1{font-size:20px;margin:0}
+    nav{display:flex;gap:12px}
+    a.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    a.ghost{background:transparent;color:var(--accent);padding:8px 12px;border-radius:10px;border:1px solid rgba(0,0,0,0.06);text-decoration:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:22px}
+    .card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .hero h2{font-size:28px;margin:0 0 12px}
+    .lead{color:var(--muted);line-height:1.5}
+
+    /* Features */
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .feature{padding:16px;border-radius:12px;background:linear-gradient(180deg,rgba(14,165,164,0.04),rgba(14,165,164,0.02))}
+    .feature h3{margin:0 0 8px;font-size:16px}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* Sections */
+    section{margin-top:20px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+    /* Investment box */
+    .invest{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .big-ask{font-size:22px;font-weight:700;color:var(--accent-dark)}
+    .alloc{display:flex;flex-direction:column;gap:6px}
+    .alloc span{font-size:14px;color:var(--muted)}
+
+    /* Contact */
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea,select{padding:10px;border-radius:10px;border:1px solid #e6eef0;font-size:14px}
+    button.primary{background:var(--accent);color:white;padding:10px;border-radius:10px;border:none;font-weight:700}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid3{grid-template-columns:repeat(2,1fr)}
+      .two{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      .grid3{grid-template-columns:1fr}
+      .logo{width:44px;height:44px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">CS</div>
+        <div>
+          <h1>CuraSynth</h1>
+          <div class="small">AI-powered safety for complex medication</div>
+        </div>
+      </div>
+      <nav>
+        <a class="ghost" href="#problem">Muammo</a>
+        <a class="ghost" href="#solution">Yechim</a>
+        <a class="ghost" href="#invest">Invest</a>
+        <a class="btn" href="#contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div>
+          <div class="card">
+            <h2>Sun’iy intellekt orqali dorilar kombinatsiyasini xavfsiz qiling</h2>
+            <p class="lead">CuraSynth bemorning genetikasi, tibbiy tarixi, parhezi va "wearable" ma'lumotlarini tahlil qilib, kumulyativ dorilar xavfini oldindan aniqlaydi va shifokorlarga xavfsiz muqobil variantlar taklif qiladi.</p>
+
+            <div style="margin-top:14px;display:flex;gap:10px">
+              <a href="#invest" class="btn">Investorlar uchun</a>
+              <a href="#contact" class="ghost">Pilotga yozilish</a>
+            </div>
+
+            <div class="grid3" style="margin-top:16px">
+              <div class="feature">
+                <h3>Genetika</h3>
+                <div class="small">Farmakogenetika bilan shaxsiy javobni hisobga olamiz.</div>
+              </div>
+              <div class="feature">
+                <h3>Wearables</h3>
+                <div class="small">EKG, uyqu va faoliyat ma'lumotlari bilan real vaqt nazorat.</div>
+              </div>
+              <div class="feature">
+                <h3>Klinik xavf prognozi</h3>
+                <div class="small">5+ dorilar kombinatsiyasining kumulyativ xatarini baholash.</div>
+              </div>
+            </div>
+          </div>
+
+          <section id="problem" class="card" style="margin-top:16px">
+            <h3>Muammo</h3>
+            <p class="small">Ko‘plab surunkali bemorlar bir nechta shifokor tomonidan turli dorilar tayinlanishi natijasida polifarmatsiyaga duch keladi. Hozirgi tekshiruv vositalari juftlikdagi o‘zaro ta’sirni aniqlaydi, ammo 5+ dorilar kombinatsiyasining umumiy ta'siri ko‘pincha e'tibordan chetda qoladi.</p>
+          </section>
+
+          <section id="solution" class="card">
+            <h3>Yechim</h3>
+            <div class="small">CuraSynth barcha mavjud ma'lumotlarni birlashtirib, xavf reytingi hosil qiladi va shifokorga xavfsiz alternativalarni taklif etadi. Bu usul bemor xavfsizligini oshirib, nojo‘ya holatlar va kasalxonaga yotqizishlarni kamaytiradi.</div>
+          </section>
+
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3>Investitsiya so‘rovi</h3>
+            <div class="invest" style="margin-top:10px">
+              <div>
+                <div class="big-ask">$2000</div>
+                <div class="small">Boshlang‘ich MVP va pilot uchun</div>
+              </div>
+              <div class="alloc">
+                <span>• Prototip: $1000</span>
+                <span>• Brending & dizayn: $400</span>
+                <span>• Marketing: $300</span>
+                <span>• Huquqiy: $300</span>
+              </div>
+            </div>
+
+            <div style="margin-top:12px">
+              <a class="btn" href="#contact">Pilotga yozilish</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h3>Tez demo</h3>
+            <p class="small">Qisqa shakl orqali siz biz bilan bog‘lanib, pilot yoki hamkorlik haqida so‘rashingiz mumkin.</p>
+            <form id="quickForm">
+              <input type="text" id="name" placeholder="Ismingiz" required />
+              <input type="email" id="email" placeholder="Email" required />
+              <select id="role">
+                <option value="">Siz kim? (Tanlang)</option>
+                <option>Shifokor</option>
+                <option>Klinika menejeri</option>
+                <option>Investor</option>
+                <option>Boshqa</option>
+              </select>
+              <button type="submit" class="primary">Yuborish</button>
+              <div id="formMsg" class="small" style="margin-top:8px;color:green;display:none"></div>
+            </form>
+          </div>
+        </aside>
+      </div>
+
+      <section class="card two">
+        <div>
+          <h3>Qanday ishlaydi</h3>
+          <ol class="small">
+            <li>Ma'lumot to‘planadi: EHR, genetik ma'lumot, dorilar ro‘yxati, wearable.</li>
+            <li>AI model kumulyativ xavfni baholaydi va muqobil takliflar ishlab chiqadi.</li>
+            <li>Shifokor qaror qabul qiladi va tizim monitoringni davom ettiradi.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Kontakt</h3>
+          <p class="small">Iltimos, biz bilan bog‘lanish o‘rniga telefon orqali murojaat qiling:</p>
+          <p class="small"><strong>+998 99 763 36 66</strong></p>
+          <p class="small">(Telefon orqali qo‘ng‘iroq qiling — biz sizga tez orada javob beramiz)</p>
+        </div>
+      </section>
+
+      <section class="card" id="contact">
+        <h3>Kontakt</h3>
+        <p class="small">Iltimos, sayt orqali yozish o‘rniga telefon orqali bog‘laning:</p>
+        <p class="small"><strong>+998 99 763 36 66</strong></p>
+        <p class="small">Har kuni: 09:00 — 18:00</p>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> CuraSynth — Barcha huquqlar himoyalangan
+    </footer>
+  </div>
+
+  <script>
+    // Small JS to handle forms and interactions
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function showMsg(el, txt){
+      el.textContent = txt; el.style.display = 'block';
+      setTimeout(()=>{ el.style.display='none'; }, 4000);
+    }
+
+    document.getElementById('quickForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var role = document.getElementById('role').value;
+      if(!name || !email) return;
+      // Fake send: in real setup connect to backend / webhook
+      showMsg(document.getElementById('formMsg'), 'Rahmat! Sizning murojaatingiz qabul qilindi.');
+      this.reset();
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('c_name').value.trim();
+      var email = document.getElementById('c_email').value.trim();
+      var msg = document.getElementById('c_message').value.trim();
+      if(!name || !email || !msg) return;
+      showMsg(document.getElementById('c_msg'), 'Rahmat! Xabaringiz yuborildi.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
